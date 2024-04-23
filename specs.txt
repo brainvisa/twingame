@@ -1,31 +1,33 @@
-Jeu des jumeaux GUI
-===================
+Twins game GUI
+==============
 
-1 fenêtre
-panneau gauche: boutons
-espace droite: vues 3D
-menu: réglages
-utilisable sans souris sur un écran tactile
+1 window
+left panel: buttons
+right space: 3D views
+menu: settings
+usable without a mouse on a touch screen
 
-chaque vue a une poignée colorée pour associer ou dépacer les vues
+each view has a colored handle used to associate or move views
 
-zoom ? la forme globale du cerveau rend peut-être le jeu trop facile ?
--> ne pas montrer le maillage individuel, mais un maillage moyen ?
+zoom ? the global brain shape maybe makes the game too easy ?
+-> do not display individual meshes, but an average one instead ?
 
 actions:
-- démarrer / remettre à 0
-- déplacer une vue pour la mettre à côté d'une autre
-- associer une paire: cocher 2 boutons et cliquer sur "associer"
-- dissocier une paire (revenir en arrière)
-- voir la solution, diffs avec l'essai du joueur
+- start / reset
+- move a view to place it next to another
+- associate pair: check 2 buttons and click "associate"
+- dissociate a pair (rrevert association)
+- see the solution solution, diffs with the player guesses
 - sync views
+- show subjects with solution
+- sort subjects ?
 
-- reset zoom, points de vue ?
+- reset zoom, points of view ?
 
-réglages:
-- nombre de paires visibles
-- hémisphère
-- associer des hémisphères ?
+settings:
+- number of visible pairs
+- hemisphere
+- associate hemispheres ?
 
 dataset:
-fichier .json en entrée
+.json config file as input

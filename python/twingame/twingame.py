@@ -540,6 +540,11 @@ class TwinGame(Qt.QMainWindow):
                 ly.setAlignment(label, Qt.Qt.AlignCenter)
                 lay.addWidget(frame)
                 lay.setAlignment(frame, Qt.Qt.AlignCenter)
+                gs = w.findChild(Qt.QGraphicsScene)
+                txt = gs.addSimpleText(sub, Qt.QFont('', 20))
+                txt.setPen(Qt.QPen(Qt.QColor(255, 120, 0)))
+                txt.setPos((gs.width() - txt.boundingRect().width()) / 2,
+                           gs.height() - 32)
         # users prefer this not done
         # self.reorder_views(subjects)
 
