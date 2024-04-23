@@ -301,7 +301,7 @@ class TwinGame(Qt.QMainWindow):
 
         check_icn = getattr(self, 'check_icon', None)
         if check_icn is None:
-            mypath = osp.dirname(__file__)
+            mypath = osp.join(self.get_share_path(), 'icons')
             check_icn = Qt.QIcon(osp.join(mypath, 'link_light.png'))
             self.grip_pixmap = Qt.QPixmap(osp.join(mypath, 'grip.png'))
 
@@ -476,7 +476,8 @@ class TwinGame(Qt.QMainWindow):
         else:
             new_sub = subjects[:j+1] + [sel[0]] + \
                 [s for s in subjects[j+1:] if s != sel[0]]
-        self.reorder_views(new_sub)
+        # users prefer this not done
+        # self.reorder_views(new_sub)
 
     def dissociate(self):
         sel = self.get_selection()
@@ -539,7 +540,8 @@ class TwinGame(Qt.QMainWindow):
                 ly.setAlignment(label, Qt.Qt.AlignCenter)
                 lay.addWidget(frame)
                 lay.setAlignment(frame, Qt.Qt.AlignCenter)
-        self.reorder_views(subjects)
+        # users prefer this not done
+        # self.reorder_views(subjects)
 
     def display_meshes(self, toggled):
         self.show_meshes = toggled
