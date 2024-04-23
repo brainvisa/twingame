@@ -1,0 +1,49 @@
+[project]
+name = "twingame"
+version = "1.0.0"
+authors = [
+    {name = "DR", email = "contact@brainvisa.info"},
+]
+description = "twingame"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "CeCILL-v2"}
+classifiers = [
+    "Intended Audience :: Users",
+    "License :: OSI Approved",
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: GUI",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Natural Language :: French",
+    "Topic :: Game, brain research",
+]
+dependencies = [
+  'PyQt5', 'anatomist'
+]
+
+[project.optional-dependencies]
+doc = [
+    "sphinx >=1.0",
+]
+
+[project.urls]
+homepage = "http://brainvisa.github.io/twingame"
+repository = "http://brainvisa.github.io/twingame"
+
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["python"]
+
+[tool.setuptools.package-data]
+twingame = ['share/*']
+
+[tool.brainvisa-cmake]
+
