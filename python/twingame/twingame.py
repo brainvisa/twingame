@@ -544,7 +544,7 @@ class TwinGame(Qt.QMainWindow):
                 txt = gs.addSimpleText(sub, Qt.QFont('', 20))
                 txt.setPen(Qt.QPen(Qt.QColor(255, 120, 0)))
                 txt.setPos((gs.width() - txt.boundingRect().width()) / 2,
-                           gs.height() - 32)
+                           gs.height() - txt.boundingRect().height() - 4)
         # users prefer this not done
         # self.reorder_views(subjects)
 
