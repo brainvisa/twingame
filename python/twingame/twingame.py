@@ -282,7 +282,12 @@ class TwinGame(Qt.QMainWindow):
             glay = Qt.QGridLayout()
             self.views.setLayout(glay)
         a = ana.Anatomist('-b')
-        twins = self.randomize()
+        try:
+            twins = self.randomize()
+        except Exception as e:
+            Qt.QMessageBox.warning(
+                'Plus assez de données. Changez la config...')
+            return
         # print('twins:', twins)
         meta = self.get_metadata()
 
@@ -364,18 +369,39 @@ class TwinGame(Qt.QMainWindow):
         for k, vals in self.twin_filters.items():
             if k == 'hémisphère':
                 continue
-            filt = set()
-            for v in vals:
-                filt.update(meta_twins.get(k, {}).get(v, []))
-            twin_list = twin_list.intersection(filt)
-            print('filter:', k, v, '->', len(twin_list))
+            if k == 'difficulté':
+                if len(vals) < 2:
+                    vals.append(vals[0])
+                rvals = [(vals[0] - 1) / 10 * len(twin_meta),
+                         vals[1] / 10 * len(twin_meta)]
+                if rvals[1] == 1.:
+                    rvals[1] = 1.1
+                filt = {t for t, tm in twin_meta.items()
+                        if tm.get('rank', 0) >= rvals[0]
+                            and tm.get('rank', 0) < rvals[1]}
+                twin_list = twin_list.intersection(filt)
+                print('filter:', k, vals, '->', len(twin_list))
+            else:
+                filt = set()
+                for v in vals:
+                    filt.update(meta_twins.get(k, {}).get(v, []))
+                twin_list = twin_list.intersection(filt)
+                print('filter:', k, v, '->', len(twin_list))
         side = self.twin_filters.get('hémisphère')
         if side is not None and len(side) == 1:
             sides = {'gauche': 'L', 'droit': 'R'}
             self.side = sides[side[0]]
         else:
             self.side = np.random.choice(['L', 'R'], 1, replace=False)[0]
-        print('SIDE:', self.side)
+
+        # print('SIDE:', self.side)
+        print('twin_list:', twin_list)
+        if len(twin_list) == 0:
+            print('No subejct left with the current filters')
+            self.displayed_twins = []
+            return
+
+        nt = np.min((nt, len(twin_list)))
         self.displayed_twins = np.random.choice(
             list(twin_list), nt, replace=False)
         return self.displayed_twins
@@ -545,6 +571,52 @@ class TwinGame(Qt.QMainWindow):
                 txt.setPen(Qt.QPen(Qt.QColor(255, 120, 0)))
                 txt.setPos((gs.width() - txt.boundingRect().width()) / 2,
                            gs.height() - txt.boundingRect().height() - 4)
+
+                twin_meta = self.dataset.get('twin_meta', {})
+                tmeta = twin_meta.get(tpair_name, {})
+                sex = tmeta.get('genre')
+                if sex is not None:
+                    stxt = gs.addSimpleText(sex, Qt.QFont('', 10))
+                    stxt.setPen(Qt.QPen(Qt.QColor(255, 120, 0)))
+                    stxt.setBrush(Qt.QBrush(Qt.QColor(120, 60, 0)))
+                    stxt.setPos(4, 4)
+
+                mz = tmeta.get('monozygote')
+                if mz is not None:
+                    mz = {True: 'MZ', False: 'DZ'}[mz]
+                    mtxt = gs.addSimpleText(mz, Qt.QFont('', 10))
+                    mtxt.setPen(Qt.QPen(Qt.QColor(255, 120, 0)))
+                    mtxt.setBrush(Qt.QBrush(Qt.QColor(120, 60, 0)))
+                    mtxt.setPos(gs.width() - mtxt.boundingRect().width() - 4,
+                                4)
+
+                dist = tmeta.get('distance')
+                if dist is not None:
+                    dtxt = gs.addSimpleText('dist: %5.3f' % dist,
+                                            Qt.QFont('', 10))
+                    dtxt.setPen(Qt.QPen(Qt.QColor(255, 120, 0)))
+                    dtxt.setBrush(Qt.QBrush(Qt.QColor(120, 60, 0)))
+                    dtxt.setPos(
+                        4, gs.height() - dtxt.boundingRect().height() - 4)
+
+                rank = tmeta.get('rank')
+                if rank is not None:
+                    rtxt = gs.addSimpleText(
+                        f'rang: {rank + 1} / {len(twin_meta)}',
+                        Qt.QFont('', 10))
+                    a = ana.Anatomist()
+                    pal = a.palettes().find('green_yellow_red')
+                    r = rank / len(twin_meta) * (pal.shape[0] - 30)
+                    col = pal['v'][int(r + 30), 0, 0, 0][:3]
+                    # darken a bit the colors
+                    col = (col.astype(np.uint64) * 0.8).astype(np.uint8)
+                    rtxt.setPen(Qt.QPen(Qt.QColor(*col)))
+                    # brush doesn't work here... why... ?
+                    rtxt.setBrush(Qt.QBrush(Qt.QColor(120, 60, 0, 255),
+                                            Qt.Qt.SolidPattern))
+                    rtxt.setPos(gs.width() - 4 - rtxt.boundingRect().width(),
+                                gs.height() - rtxt.boundingRect().height() - 4)
+
         # users prefer this not done
         # self.reorder_views(subjects)
 
@@ -662,7 +734,10 @@ class TwinGame(Qt.QMainWindow):
         meta_set = {}
         for meta in self.dataset.get('twin_meta', {}).values():
             for k, v in meta.items():
-                meta_set.setdefault(k, set()).add(v)
+                if k not in ('distance', 'rank', 'twin_rank'):
+                    meta_set.setdefault(k, set()).add(v)
+                elif k == 'rank':
+                    meta_set['difficulté'] = set(range(1, 11))
         meta_set['hémisphère'] = ['gauche', 'droit']
         row = 0
         col = 0
@@ -672,14 +747,19 @@ class TwinGame(Qt.QMainWindow):
             fbl.addLayout(hl, row, col)
             hl.addWidget(Qt.QLabel(f'{k}:'))
             df = self.twin_filters.get(k)
-            if True:
-                vgb = Qt.QGroupBox()
-                hl.addWidget(vgb)
-                vl2 = Qt.QVBoxLayout()
+            vgb = Qt.QGroupBox()
+            hl.addWidget(vgb)
+            vl2 = Qt.QVBoxLayout()
+            vgb.setLayout(vl2)
+            if k == 'difficulté':
+                le = Qt.QLineEdit()
+                le.setText('1-10')
+                vl2.addWidget(le)
+                filt_wids[k] = (le, None)
+            else:
                 vbg = Qt.QButtonGroup(vgb)
                 filt_wids[k] = (vbg, v)
                 vbg.setExclusive(False)
-                vgb.setLayout(vl2)
                 for i, x in enumerate(v):
                     b = Qt.QCheckBox(str(x))
                     b.setChecked(df is None or x in df)
@@ -719,6 +799,25 @@ class TwinGame(Qt.QMainWindow):
                             del self.twin_filters[k]
                     else:
                         self.twin_filters[k] = vals
+                elif k == 'difficulté':
+                    dif = w.text().strip().split('-')
+                    try:
+                        dif = [int(x.strip()) for x in dif][:2]
+                    except Exception:
+                        Qt.QMessageBox.warning(
+                            None, 'Erreur de config',
+                            'Impossible de lire la difficulté. Ce doit être '
+                            'un nombre (1 à 10) ou 2 nombres séparés par un '
+                            'tiret, ex: 1-4')
+                        continue
+                    if len(dif) == 0:
+                        if 'difficulté' in self.twin_filters:
+                            del self.twin_filters['difficulté']
+                        continue
+                    if len(dif) == 1:
+                        dif.append(dif[0])
+                    self.twin_filters[k] = dif
+
             self.start()
 
 

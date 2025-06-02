@@ -9,11 +9,16 @@ import os.path as osp
 db_dir = '/neurospin/dico/data/bv_databases/human/not_labeled/hcp'
 participants_file = '/neurospin/dico/data/bv_databases/human/not_labeled/hcp/participants.csv'
 restricted_file = '/neurospin/dico/jchavas/RESTRICTED_jchavas_1_18_2022_3_17_51.csv'
+dist_file = '/neurospin/dico/data/bv_databases/human/not_labeled/hcp/tables/BL/twin_distances.csv'
 output_config_file = '/tmp/twin_config.json'
 
 
 participants = pandas.read_csv(participants_file)
 restricted = pandas.read_csv(restricted_file)
+dist = None
+if dist_file is not None and osp.exists(dist_file):
+    dist = pandas.read_csv(dist_file,
+                           dtype={'ID1': str, 'ID2': str, 'rank': int})
 
 mz = restricted[restricted.ZygosityGT == 'MZ']
 dz = restricted[restricted.ZygosityGT == 'DZ']
@@ -37,6 +42,8 @@ conf = {
         "twin_meta": {}
     }
 }
+
+rtwins = {}
 
 done = set()
 num = 0
@@ -82,6 +89,7 @@ for tt, tp, mono in (('monozyg', mz, True), ('dizyg', dz, False)):
             if not skip:
                 twins[tname] = [str(x) for x in sorted(other.Subject)]
                 tmeta[tname] = {'monozygote': mono}
+                rtwins[tuple(twins[tname])] = tname
                 p = participants[participants.Subject.isin(other.Subject)]
                 if np.all(p.Gender == 'F'):
                     tmeta[tname]['genre'] = 'F'
@@ -93,6 +101,20 @@ for tt, tp, mono in (('monozyg', mz, True), ('dizyg', dz, False)):
                         print('WARNING: monozygotes with differing gender !',
                               other)
         done.update(other.Subject)
+
+if dist is not None:
+    sd = sorted(dist.index, key=lambda x: dist['pca_cos_dist'].iloc[x])
+    for i in range(dist.shape[0]):
+        si = sd[i]
+        line = dist.iloc[si]
+        # mz = line['MZ'].lower()
+        s1 = line['ID1']
+        s2 = line['ID2']
+        tname = rtwins[(s1, s2)]
+        twindef = tmeta[tname]
+        twindef['distance'] = line['pca_cos_dist']
+        twindef['twin_rank'] = int(line['rank'])
+        twindef['rank'] = i
 
 with open(output_config_file, 'w') as f:
     json.dump(conf, f, indent=4)

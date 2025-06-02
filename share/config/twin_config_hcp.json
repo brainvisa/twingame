@@ -1,10 +1,6 @@
 {
     "twin_number": 6,
     "show_sulci": false,
-    "display_filter": {
-        "genre": "F",
-        "monozygote": true
-    },
     "dataset": {
         "directory": "/neurospin/dico/data/bv_databases/human/not_labeled/hcp",
         "metadata": {
@@ -887,871 +883,1522 @@
         "twin_meta": {
             "twin_0000": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8801320836102434,
+                "twin_rank": 57,
+                "rank": 58
             },
             "twin_0001": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9159975625502222,
+                "twin_rank": 104,
+                "rank": 116
             },
             "twin_0002": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8742877865642122,
+                "twin_rank": 50,
+                "rank": 50
             },
             "twin_0003": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8497023620370461,
+                "twin_rank": 28,
+                "rank": 28
             },
             "twin_0004": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.8934750867510592,
+                "twin_rank": 83,
+                "rank": 87
             },
             "twin_0005": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8317874932555924,
+                "twin_rank": 17,
+                "rank": 17
             },
             "twin_0006": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8247634825448924,
+                "twin_rank": 12,
+                "rank": 12
             },
             "twin_0007": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8727427542470552,
+                "twin_rank": 48,
+                "rank": 48
             },
             "twin_0008": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.8454635055666903,
+                "twin_rank": 26,
+                "rank": 26
             },
             "twin_0009": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9329566965881908,
+                "twin_rank": 118,
+                "rank": 142
             },
             "twin_0010": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8872224586702556,
+                "twin_rank": 71,
+                "rank": 73
             },
             "twin_0011": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9390021306859556,
+                "twin_rank": 123,
+                "rank": 148
             },
             "twin_0013": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8091222672371771,
+                "twin_rank": 5,
+                "rank": 5
             },
             "twin_0014": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8499244715157692,
+                "twin_rank": 29,
+                "rank": 29
             },
             "twin_0015": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9103651437629364,
+                "twin_rank": 97,
+                "rank": 107
             },
             "twin_0017": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9627855635942612,
+                "twin_rank": 133,
+                "rank": 179
             },
             "twin_0018": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9220319532275684,
+                "twin_rank": 113,
+                "rank": 127
             },
             "twin_0019": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8870588740567819,
+                "twin_rank": 70,
+                "rank": 72
             },
             "twin_0020": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9174011149181532,
+                "twin_rank": 110,
+                "rank": 122
             },
             "twin_0021": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.8929446012997319,
+                "twin_rank": 82,
+                "rank": 86
             },
             "twin_0022": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.935126390572639,
+                "twin_rank": 120,
+                "rank": 144
             },
             "twin_0023": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.8890930310258414,
+                "twin_rank": 75,
+                "rank": 78
             },
             "twin_0024": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9340640166056596,
+                "twin_rank": 119,
+                "rank": 143
             },
             "twin_0025": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9022512817964125,
+                "twin_rank": 92,
+                "rank": 98
             },
             "twin_0026": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9303524521971946,
+                "twin_rank": 115,
+                "rank": 135
             },
             "twin_0029": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8689957216695887,
+                "twin_rank": 43,
+                "rank": 43
             },
             "twin_0030": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8760683793741216,
+                "twin_rank": 52,
+                "rank": 52
             },
             "twin_0031": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8959776522381828,
+                "twin_rank": 87,
+                "rank": 91
             },
             "twin_0032": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9372864638079956,
+                "twin_rank": 121,
+                "rank": 145
             },
             "twin_0033": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8837561869792754,
+                "twin_rank": 63,
+                "rank": 65
             },
             "twin_0034": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.8729903120694984,
+                "twin_rank": 49,
+                "rank": 49
             },
             "twin_0035": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9014152219971804,
+                "twin_rank": 91,
+                "rank": 97
             },
             "twin_0036": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9009835182597348,
+                "twin_rank": 90,
+                "rank": 96
             },
             "twin_0037": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8819825455402336,
+                "twin_rank": 59,
+                "rank": 60
             },
             "twin_0039": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.8781359035124805,
+                "twin_rank": 55,
+                "rank": 55
             },
             "twin_0040": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8922597557235622,
+                "twin_rank": 80,
+                "rank": 84
             },
             "twin_0041": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9568452685571583,
+                "twin_rank": 130,
+                "rank": 174
             },
             "twin_0043": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9143665251556304,
+                "twin_rank": 100,
+                "rank": 110
             },
             "twin_0044": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9159398765760456,
+                "twin_rank": 103,
+                "rank": 115
             },
             "twin_0045": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.8394709817317224,
+                "twin_rank": 20,
+                "rank": 20
             },
             "twin_0046": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.955377484392994,
+                "twin_rank": 129,
+                "rank": 173
             },
             "twin_0047": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8593139099099838,
+                "twin_rank": 34,
+                "rank": 34
             },
             "twin_0049": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.8177108663650892,
+                "twin_rank": 8,
+                "rank": 8
             },
             "twin_0050": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.8878269728551822,
+                "twin_rank": 73,
+                "rank": 75
             },
             "twin_0051": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8751327118336611,
+                "twin_rank": 51,
+                "rank": 51
             },
             "twin_0052": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8763462752795077,
+                "twin_rank": 53,
+                "rank": 53
             },
             "twin_0054": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8257569803308068,
+                "twin_rank": 13,
+                "rank": 13
             },
             "twin_0055": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.8326485261934158,
+                "twin_rank": 18,
+                "rank": 18
             },
             "twin_0056": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8595271114504888,
+                "twin_rank": 36,
+                "rank": 36
             },
             "twin_0057": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.844630420997112,
+                "twin_rank": 25,
+                "rank": 25
             },
             "twin_0058": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.942772059963952,
+                "twin_rank": 125,
+                "rank": 154
             },
             "twin_0059": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9166408318204864,
+                "twin_rank": 106,
+                "rank": 118
             },
             "twin_0060": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.85944418735839,
+                "twin_rank": 35,
+                "rank": 35
             },
             "twin_0061": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9307426737210768,
+                "twin_rank": 116,
+                "rank": 136
             },
             "twin_0062": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9044092355146848,
+                "twin_rank": 94,
+                "rank": 100
             },
             "twin_0063": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9765409187955104,
+                "twin_rank": 136,
+                "rank": 190
             },
             "twin_0064": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8842789618734263,
+                "twin_rank": 66,
+                "rank": 68
             },
             "twin_0065": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9374046368562798,
+                "twin_rank": 122,
+                "rank": 146
             },
             "twin_0066": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.86877853999334,
+                "twin_rank": 42,
+                "rank": 42
             },
             "twin_0067": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9115644210982132,
+                "twin_rank": 98,
+                "rank": 108
             },
             "twin_0068": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.8839792647850048,
+                "twin_rank": 64,
+                "rank": 66
             },
             "twin_0069": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.8608190903438647,
+                "twin_rank": 38,
+                "rank": 38
             },
             "twin_0070": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9172796745612302,
+                "twin_rank": 109,
+                "rank": 121
             },
             "twin_0071": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.8841421893964687,
+                "twin_rank": 65,
+                "rank": 67
             },
             "twin_0072": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.8412521841539229,
+                "twin_rank": 22,
+                "rank": 22
             },
             "twin_0073": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.851610025652847,
+                "twin_rank": 31,
+                "rank": 31
             },
             "twin_0074": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8670577226770384,
+                "twin_rank": 40,
+                "rank": 40
             },
             "twin_0075": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.8857373053225963,
+                "twin_rank": 69,
+                "rank": 71
             },
             "twin_0076": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9268263191892429,
+                "twin_rank": 114,
+                "rank": 130
             },
             "twin_0077": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.8410151696500733,
+                "twin_rank": 21,
+                "rank": 21
             },
             "twin_0078": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.7959742747970449,
+                "twin_rank": 4,
+                "rank": 4
             },
             "twin_0079": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8135995684220593,
+                "twin_rank": 6,
+                "rank": 6
             },
             "twin_0080": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.8809864399816988,
+                "twin_rank": 58,
+                "rank": 59
             },
             "twin_0081": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.8328339297832839,
+                "twin_rank": 19,
+                "rank": 19
             },
             "twin_0082": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8919203670446246,
+                "twin_rank": 79,
+                "rank": 83
             },
             "twin_0083": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8928538430108587,
+                "twin_rank": 81,
+                "rank": 85
             },
             "twin_0084": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9151729130019784,
+                "twin_rank": 101,
+                "rank": 113
             },
             "twin_0085": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8470299227325274,
+                "twin_rank": 27,
+                "rank": 27
             },
             "twin_0086": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8145162322779698,
+                "twin_rank": 7,
+                "rank": 7
             },
             "twin_0087": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.8947613701995898,
+                "twin_rank": 84,
+                "rank": 88
             },
             "twin_0088": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.8439837669517123,
+                "twin_rank": 24,
+                "rank": 24
             },
             "twin_0089": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.883702135425517,
+                "twin_rank": 62,
+                "rank": 63
             },
             "twin_0090": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9445087075719598,
+                "twin_rank": 126,
+                "rank": 156
             },
             "twin_0091": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8596953792936742,
+                "twin_rank": 37,
+                "rank": 37
             },
             "twin_0092": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.8855394699952676,
+                "twin_rank": 68,
+                "rank": 70
             },
             "twin_0093": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.7867726119578986,
+                "twin_rank": 2,
+                "rank": 2
             },
             "twin_0094": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8873523026519741,
+                "twin_rank": 72,
+                "rank": 74
             },
             "twin_0095": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8827401810261885,
+                "twin_rank": 61,
+                "rank": 62
             },
             "twin_0096": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.828524674934477,
+                "twin_rank": 15,
+                "rank": 15
             },
             "twin_0097": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8557091437204883,
+                "twin_rank": 33,
+                "rank": 33
             },
             "twin_0098": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8690316927421361,
+                "twin_rank": 44,
+                "rank": 44
             },
             "twin_0099": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9169955649379326,
+                "twin_rank": 108,
+                "rank": 120
             },
             "twin_0100": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8529855779505011,
+                "twin_rank": 32,
+                "rank": 32
             },
             "twin_0101": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9169834921578168,
+                "twin_rank": 107,
+                "rank": 119
             },
             "twin_0102": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.8767926578321581,
+                "twin_rank": 54,
+                "rank": 54
             },
             "twin_0103": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9494249292759648,
+                "twin_rank": 128,
+                "rank": 166
             },
             "twin_0105": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.7931330713701471,
+                "twin_rank": 3,
+                "rank": 3
             },
             "twin_0106": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9005093398192262,
+                "twin_rank": 89,
+                "rank": 95
             },
             "twin_0107": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9214625616154178,
+                "twin_rank": 112,
+                "rank": 126
             },
             "twin_0108": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8513389645890658,
+                "twin_rank": 30,
+                "rank": 30
             },
             "twin_0109": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8950408428392942,
+                "twin_rank": 86,
+                "rank": 90
             },
             "twin_0110": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9570048884741152,
+                "twin_rank": 131,
+                "rank": 175
             },
             "twin_0111": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.8884946543759619,
+                "twin_rank": 74,
+                "rank": 76
             },
             "twin_0112": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.8228093447717357,
+                "twin_rank": 11,
+                "rank": 11
             },
             "twin_0113": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.8638096149332106,
+                "twin_rank": 39,
+                "rank": 39
             },
             "twin_0114": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.8221420335583995,
+                "twin_rank": 10,
+                "rank": 10
             },
             "twin_0115": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8718635666681215,
+                "twin_rank": 47,
+                "rank": 47
             },
             "twin_0116": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.828811651825558,
+                "twin_rank": 16,
+                "rank": 16
             },
             "twin_0117": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8195445466055244,
+                "twin_rank": 9,
+                "rank": 9
             },
             "twin_0118": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.946981665670726,
+                "twin_rank": 127,
+                "rank": 162
             },
             "twin_0119": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.971869543077107,
+                "twin_rank": 135,
+                "rank": 186
             },
             "twin_0120": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.8972258059150207,
+                "twin_rank": 88,
+                "rank": 92
             },
             "twin_0121": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8420087829401015,
+                "twin_rank": 23,
+                "rank": 23
             },
             "twin_0122": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8950396240304508,
+                "twin_rank": 85,
+                "rank": 89
             },
             "twin_0123": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9141800252682436,
+                "twin_rank": 99,
+                "rank": 109
             },
             "twin_0124": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.7732029964297147,
+                "twin_rank": 0,
+                "rank": 0
             },
             "twin_0125": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.8843612728060205,
+                "twin_rank": 67,
+                "rank": 69
             },
             "twin_0126": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9054196026418204,
+                "twin_rank": 95,
+                "rank": 101
             },
             "twin_0127": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9718660839088252,
+                "twin_rank": 134,
+                "rank": 185
             },
             "twin_0128": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.8915004926993544,
+                "twin_rank": 78,
+                "rank": 82
             },
             "twin_0129": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8914554057266322,
+                "twin_rank": 77,
+                "rank": 81
             },
             "twin_0130": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9612936993258892,
+                "twin_rank": 132,
+                "rank": 176
             },
             "twin_0131": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.7816324014627805,
+                "twin_rank": 1,
+                "rank": 1
             },
             "twin_0132": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9415822872497428,
+                "twin_rank": 124,
+                "rank": 150
             },
             "twin_0133": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8713686186455534,
+                "twin_rank": 46,
+                "rank": 46
             },
             "twin_0134": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9162799552541232,
+                "twin_rank": 105,
+                "rank": 117
             },
             "twin_0135": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.826031095969011,
+                "twin_rank": 14,
+                "rank": 14
             },
             "twin_0136": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8800220397717805,
+                "twin_rank": 56,
+                "rank": 57
             },
             "twin_0137": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.8706245328838331,
+                "twin_rank": 45,
+                "rank": 45
             },
             "twin_0138": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9780259805251448,
+                "twin_rank": 137,
+                "rank": 192
             },
             "twin_0139": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9042154272637632,
+                "twin_rank": 93,
+                "rank": 99
             },
             "twin_0140": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9081201391455846,
+                "twin_rank": 96,
+                "rank": 104
             },
             "twin_0141": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.8823085009615257,
+                "twin_rank": 60,
+                "rank": 61
             },
             "twin_0143": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.8911428416923034,
+                "twin_rank": 76,
+                "rank": 79
             },
             "twin_0144": {
                 "monozygote": true,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9205814166308446,
+                "twin_rank": 111,
+                "rank": 125
             },
             "twin_0145": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9154475658037224,
+                "twin_rank": 102,
+                "rank": 114
             },
             "twin_0146": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8687463055069263,
+                "twin_rank": 41,
+                "rank": 41
             },
             "twin_0148": {
                 "monozygote": true,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9321534152568672,
+                "twin_rank": 117,
+                "rank": 139
             },
             "twin_0149": {
                 "monozygote": false,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9934223903391592,
+                "twin_rank": 65,
+                "rank": 203
             },
             "twin_0151": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9720224396223948,
+                "twin_rank": 51,
+                "rank": 187
             },
             "twin_0152": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.975460964764564,
+                "twin_rank": 52,
+                "rank": 188
             },
             "twin_0153": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9301982635329848,
+                "twin_rank": 19,
+                "rank": 134
             },
             "twin_0154": {
                 "monozygote": false,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.944749680090222,
+                "twin_rank": 30,
+                "rank": 157
             },
             "twin_0155": {
                 "monozygote": false,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9471339110910576,
+                "twin_rank": 35,
+                "rank": 163
             },
             "twin_0156": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9519440993388248,
+                "twin_rank": 39,
+                "rank": 168
             },
             "twin_0157": {
                 "monozygote": false,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9427536185284344,
+                "twin_rank": 28,
+                "rank": 153
             },
             "twin_0158": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.968984003598816,
+                "twin_rank": 50,
+                "rank": 184
             },
             "twin_0159": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9236371246118048,
+                "twin_rank": 15,
+                "rank": 129
             },
             "twin_0160": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9297994538798688,
+                "twin_rank": 17,
+                "rank": 132
             },
             "twin_0162": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8790177386229857,
+                "twin_rank": 0,
+                "rank": 56
             },
             "twin_0163": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9229881350549738,
+                "twin_rank": 14,
+                "rank": 128
             },
             "twin_0164": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8837401834791409,
+                "twin_rank": 1,
+                "rank": 64
             },
             "twin_0165": {
                 "monozygote": false,
-                "genre": "M"
+                "genre": "M",
+                "distance": 1.0387865388038189,
+                "twin_rank": 77,
+                "rank": 215
             },
             "twin_0166": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9514789341771408,
+                "twin_rank": 38,
+                "rank": 167
             },
             "twin_0168": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 1.0023456091527776,
+                "twin_rank": 73,
+                "rank": 211
             },
             "twin_0170": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.98903000060408,
+                "twin_rank": 63,
+                "rank": 201
             },
             "twin_0171": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.949133011672731,
+                "twin_rank": 36,
+                "rank": 164
             },
             "twin_0172": {
                 "monozygote": false,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9864379957599448,
+                "twin_rank": 58,
+                "rank": 196
             },
             "twin_0173": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9934648309741344,
+                "twin_rank": 66,
+                "rank": 204
             },
             "twin_0174": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9326374308896224,
+                "twin_rank": 22,
+                "rank": 140
             },
             "twin_0175": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9618840237570404,
+                "twin_rank": 44,
+                "rank": 177
             },
             "twin_0176": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.993749371959854,
+                "twin_rank": 67,
+                "rank": 205
             },
             "twin_0177": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9382939237526216,
+                "twin_rank": 24,
+                "rank": 147
             },
             "twin_0178": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 1.0016055067394332,
+                "twin_rank": 71,
+                "rank": 209
             },
             "twin_0180": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9326907783792748,
+                "twin_rank": 23,
+                "rank": 141
             },
             "twin_0182": {
                 "monozygote": false,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9192890750721734,
+                "twin_rank": 12,
+                "rank": 123
             },
             "twin_0183": {
                 "monozygote": false,
-                "genre": "M"
+                "genre": "M",
+                "distance": 1.0010902107291977,
+                "twin_rank": 70,
+                "rank": 208
             },
             "twin_0184": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9406928930084556,
+                "twin_rank": 25,
+                "rank": 149
             },
             "twin_0185": {
                 "monozygote": false,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9311064282071988,
+                "twin_rank": 20,
+                "rank": 137
             },
             "twin_0186": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9634113004571458,
+                "twin_rank": 46,
+                "rank": 180
             },
             "twin_0187": {
                 "monozygote": false,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9665100533209068,
+                "twin_rank": 49,
+                "rank": 183
             },
             "twin_0188": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9151484137023363,
+                "twin_rank": 11,
+                "rank": 112
             },
             "twin_0189": {
                 "monozygote": false,
-                "genre": "M"
+                "genre": "M",
+                "distance": 1.0023421932713437,
+                "twin_rank": 72,
+                "rank": 210
             },
             "twin_0190": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8989799116165341,
+                "twin_rank": 5,
+                "rank": 94
             },
             "twin_0191": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9537183463930308,
+                "twin_rank": 41,
+                "rank": 170
             },
             "twin_0192": {
                 "monozygote": false,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.980327357881564,
+                "twin_rank": 55,
+                "rank": 193
             },
             "twin_0194": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 1.0220961847853127,
+                "twin_rank": 75,
+                "rank": 213
             },
             "twin_0195": {
                 "monozygote": false,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9817873958076236,
+                "twin_rank": 56,
+                "rank": 194
             },
             "twin_0196": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8887020664679424,
+                "twin_rank": 2,
+                "rank": 77
             },
             "twin_0197": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9870453968396076,
+                "twin_rank": 59,
+                "rank": 197
             },
             "twin_0198": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.8979371723523693,
+                "twin_rank": 4,
+                "rank": 93
             },
             "twin_0200": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9456252824848272,
+                "twin_rank": 33,
+                "rank": 160
             },
             "twin_0203": {
                 "monozygote": false,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.905758873015977,
+                "twin_rank": 6,
+                "rank": 102
             },
             "twin_0204": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9888856891745276,
+                "twin_rank": 62,
+                "rank": 200
             },
             "twin_0205": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9871476187066898,
+                "twin_rank": 60,
+                "rank": 198
             },
             "twin_0206": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9822693275571716,
+                "twin_rank": 57,
+                "rank": 195
             },
             "twin_0207": {
                 "monozygote": false,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9428174825016912,
+                "twin_rank": 29,
+                "rank": 155
             },
             "twin_0208": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.930087375263313,
+                "twin_rank": 18,
+                "rank": 133
             },
             "twin_0210": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9989002899596148,
+                "twin_rank": 68,
+                "rank": 206
             },
             "twin_0211": {
                 "monozygote": false,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9755615436068548,
+                "twin_rank": 53,
+                "rank": 189
             },
             "twin_0213": {
                 "monozygote": false,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9524952825067196,
+                "twin_rank": 40,
+                "rank": 169
             },
             "twin_0214": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9452997196170204,
+                "twin_rank": 31,
+                "rank": 158
             },
             "twin_0216": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 1.018963072056064,
+                "twin_rank": 74,
+                "rank": 212
             },
             "twin_0217": {
                 "monozygote": false,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.8913484449834487,
+                "twin_rank": 3,
+                "rank": 80
             },
             "twin_0218": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9277611065574451,
+                "twin_rank": 16,
+                "rank": 131
             },
             "twin_0219": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9548423678465155,
+                "twin_rank": 43,
+                "rank": 172
             },
             "twin_0220": {
                 "monozygote": false,
-                "genre": "M"
+                "genre": "M",
+                "distance": 1.0302666616043836,
+                "twin_rank": 76,
+                "rank": 214
             },
             "twin_0221": {
                 "monozygote": false,
-                "genre": "M"
+                "genre": "M",
+                "distance": 1.039811235246217,
+                "twin_rank": 78,
+                "rank": 216
             },
             "twin_0222": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9876491379208256,
+                "twin_rank": 61,
+                "rank": 199
             },
             "twin_0223": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.946873747538173,
+                "twin_rank": 34,
+                "rank": 161
             },
             "twin_0226": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9094281877683604,
+                "twin_rank": 9,
+                "rank": 106
             },
             "twin_0227": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9624102157793604,
+                "twin_rank": 45,
+                "rank": 178
             },
             "twin_0228": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.976928211144642,
+                "twin_rank": 54,
+                "rank": 191
             },
             "twin_0229": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 1.000835759010867,
+                "twin_rank": 69,
+                "rank": 207
             },
             "twin_0230": {
                 "monozygote": false,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.942162055949341,
+                "twin_rank": 27,
+                "rank": 152
             },
             "twin_0231": {
                 "monozygote": false,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.914581823312308,
+                "twin_rank": 10,
+                "rank": 111
             },
             "twin_0232": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9638620462433776,
+                "twin_rank": 48,
+                "rank": 182
             },
             "twin_0233": {
                 "monozygote": false,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9420580094482852,
+                "twin_rank": 26,
+                "rank": 151
             },
             "twin_0234": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.949336844848243,
+                "twin_rank": 37,
+                "rank": 165
             },
             "twin_0235": {
                 "monozygote": false,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9542678457992134,
+                "twin_rank": 42,
+                "rank": 171
             },
             "twin_0236": {
                 "monozygote": false,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.931293253117671,
+                "twin_rank": 21,
+                "rank": 138
             },
             "twin_0237": {
                 "monozygote": false,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9892731706685252,
+                "twin_rank": 64,
+                "rank": 202
             },
             "twin_0238": {
                 "monozygote": false,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9455912449781324,
+                "twin_rank": 32,
+                "rank": 159
             },
             "twin_0239": {
                 "monozygote": false,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9086658930778418,
+                "twin_rank": 8,
+                "rank": 105
             },
             "twin_0240": {
                 "monozygote": false,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9193996908601532,
+                "twin_rank": 13,
+                "rank": 124
             },
             "twin_0241": {
                 "monozygote": false,
-                "genre": "M"
+                "genre": "M",
+                "distance": 0.9638277615955256,
+                "twin_rank": 47,
+                "rank": 181
             },
             "twin_0242": {
                 "monozygote": false,
-                "genre": "F"
+                "genre": "F",
+                "distance": 0.9075210828751296,
+                "twin_rank": 7,
+                "rank": 103
             }
         }
     }
