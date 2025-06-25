@@ -9,7 +9,8 @@ import os.path as osp
 db_dir = '/neurospin/dico/data/bv_databases/human/not_labeled/hcp'
 participants_file = '/neurospin/dico/data/bv_databases/human/not_labeled/hcp/participants.csv'
 restricted_file = '/neurospin/dico/jchavas/RESTRICTED_jchavas_1_18_2022_3_17_51.csv'
-dist_file = '/neurospin/dico/data/bv_databases/human/not_labeled/hcp/tables/BL/twin_distances.csv'
+best_dist = 'eucl'
+dist_file = f'/neurospin/dico/data/bv_databases/human/not_labeled/hcp/tables/BL/twin_distances_{best_dist}.csv'
 output_config_file = '/tmp/twin_config.json'
 
 
@@ -103,7 +104,7 @@ for tt, tp, mono in (('monozyg', mz, True), ('dizyg', dz, False)):
         done.update(other.Subject)
 
 if dist is not None:
-    sd = sorted(dist.index, key=lambda x: dist['pca_cos_dist'].iloc[x])
+    sd = sorted(dist.index, key=lambda x: dist['dist'].iloc[x])
     for i in range(dist.shape[0]):
         si = sd[i]
         line = dist.iloc[si]
@@ -112,7 +113,7 @@ if dist is not None:
         s2 = line['ID2']
         tname = rtwins[(s1, s2)]
         twindef = tmeta[tname]
-        twindef['distance'] = line['pca_cos_dist']
+        twindef['distance'] = line['dist']
         twindef['twin_rank'] = int(line['rank'])
         twindef['rank'] = i
 
