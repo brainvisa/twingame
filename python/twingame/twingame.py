@@ -753,7 +753,8 @@ class TwinGame(Qt.QMainWindow):
             vgb.setLayout(vl2)
             if k == 'difficulté':
                 le = Qt.QLineEdit()
-                le.setText('1-10')
+                dif = self.twin_filters.get(k, [1, 10])
+                le.setText('-'.join([str(x) for x in dif]))
                 vl2.addWidget(le)
                 filt_wids[k] = (le, None)
             else:
